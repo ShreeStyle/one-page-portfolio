@@ -1,0 +1,418 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: pink;
+  color: blueviolet;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Giving a shadow for better visibility and lookout.*/
+}
+
+.left-section h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.left-section p {
+  margin: 0;
+  font-size: 1.1rem; 
+}
+
+.right-section a {
+  color: blueviolet;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.3rem;
+}
+
+.right-section a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .top-header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .right-section {
+      margin-top: 10px;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: flex-start; 
+  justify-content: flex-start; /* made this bcz strat from the left side properly*/
+  padding: 80px 20px 20px; /* the image part and header part is overlapping that's for the cause of that i made this padding area. */
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 800px; 
+  margin: 50px auto; 
+  text-align: left;
+}
+
+.avatar {
+  width: 150px; 
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px; /*  giving a Space between image and text */
+  object-fit: cover; /*  for ensure the image fits properly */
+}
+
+.intro h1 {
+  margin: 0 0 10px 0;
+  color: #4a4a4a;
+  font-size: 24px;
+}
+
+.intro h1 span {
+  color: #850eac;
+}
+
+.intro p {
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+}
+
+.intro {
+  flex: 1; /*  for ensure text takes the remaining space */
+}
+
+
+
+.skill-sec {
+  text-align: center;
+  padding: 5px 20px;
+  background-color:pink
+}
+
+
+.skill-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+}
+
+
+
+.skillway{
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+
+}
+
+.skillway:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+
+}
+
+
+.skill-logo{
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.skillway h2{
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #850eac;
+}
+
+.skillway p{
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+
+.skill-title{
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: #6a0dad;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em; 
+}
+
+
+
+.skill-title:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #6a0dad;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Projects Section ----------- */
+#projects {
+  padding: 2em;
+  background: pink
+}
+
+
+      #projects h2 {
+        color: #6a0dad;
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 1em;
+      }
+
+
+
+.projectway {
+  margin: 1em 0;
+  padding: 1em;
+  border-left: 4px solid #6a0dad;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  /* font-size: 1rem;
+  color: #666;
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s; */
+
+}
+
+.projectway:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+
+}
+
+
+.project h3 {
+  margin: 0;
+  color: #6a0dad;
+}
+
+.project p {
+  /* margin: 0.5em 0 0; */
+}
+
+.Pro{
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: #6a0dad;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;  
+}
+
+.Pro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+
+}
+
+
+
+
+.recommendations {
+  text-align: left;
+  padding: 5px 20px;
+  background-color:pink
+}
+
+
+.recomand-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+
+}
+
+
+
+.Recomand{
+ 
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: #6a0dad;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em; 
+
+}
+
+.Recomand:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+
+}
+
+
+
+
+.recomaway p{
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+.recomaway:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+
+}
+
+
+
+.submitButton{
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+
+.leave-Recommendation{
+  margin: 0%;
+  padding: 20px;
+  background-color: pink;
+}
+
+
+.leave-Recomand{
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: #6a0dad;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.leave-Recomand:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+
+}
+
+/* .submitButton {
+  font-size: 1.1em;
+  background-color: #EBF5FF;
+  color: #4312AE;
+  border: 2px solid black;
+  box-shadow: 4px 4px 4px #999999;
+} */
+.submitButton:hover, .submitButton:focus, .submitButton:active {
+  /* swap colors */
+  color: #EBF5FF;
+  background-color: #eb4bc6;
+  cursor: pointer; /* displays a hand */
+}
+
+
+
+
+
+
+/*  */
+
+.email-logo{
+  width: 20px;
+  height: 20px;
+  border-radius: 20%;
+  object-fit: cover;
+}
+
+.phone-logo{
+  width: 20px;
+  height: 20px;
+  border-radius: 20%;
+  object-fit: cover; 
+}
+
+
+
+/* Scroll to Top Button Styles */
+#scroll-to-top {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #6200ea;
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#scroll-to-top:hover {
+  background-color: #3700b3;
+  transform: scale(1.1);
+}
